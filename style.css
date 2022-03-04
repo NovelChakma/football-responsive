@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/* this is header part css code */
+header {
+  background-color: #2d25a0;
+  height: 100vh;
+}
+
+.top-banner {
+  width: 80%;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#menubar {
+  color: white;
+  display: none;
+}
+.menu-list {
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+}
+.menu-list ul li {
+  float: left;
+  margin: 1em;
+  list-style: none;
+}
+.menu-list ul li:hover {
+  background-color: #e02c6d;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+.menu-list ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+.login-btn {
+  background-color: #e02c6d;
+  padding: 5px 15px;
+  display: flex;
+  float: left;
+  text-align: center;
+}
+
+.login-btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.login-btn img {
+  width: 1em;
+  margin-right: 5px;
+}
+
+.banner .text-part {
+  color: white;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.banner .text-part a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.btn {
+  background-color: #e02c6d;
+  width: 150px;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 0px;
+  transition: width 1s;
+  border-radius: 5px;
+}
+.btn:hover {
+  width: 200px;
+}
+
+.banner {
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.image-part {
+  width: 50%;
+}
+
+.image-part img {
+  width: 100%;
+}
+
+.players-section {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.player {
+  margin: 5%;
+  padding: 5%;
+  background-color: white;
+  box-shadow: 3px 3px 9px grey, -3px -3px 9px grey;
+  color: gray;
+}
+
+.player img {
+  width: 100%;
+}
+.player a {
+  text-decoration: none;
+  color: black;
+}
+footer {
+  width: 80%;
+  margin: auto;
+}
+.breaking-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+  color: black;
+}
+.news {
+  width: 70%;
+  color: gray;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 3px 3px 9px grey, -3px -3px 9px grey;
+  border-radius: 5px;
+  transition: width 1s;
+}
+.news a {
+  text-decoration: none;
+  color: grey;
+}
+.news:hover {
+  width: 80%;
+}
+.highlights {
+  width: 80%;
+  margin: auto;
+}
+.highlights > h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px;
+  color: grey;
+}
+.video .title {
+  padding-left: 2em;
+}
+.title > h1 {
+  color: black;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+  color: black;
+}
+
+.footer img {
+  width: 40%;
+}
+
+.icons img {
+  width: 50px;
+}
+/* this the responsive css code for mobile */
+@media screen and (max-width: 750px) {
+  .menu-list ul li {
+    display: none;
+  }
+  #menubar {
+    display: block;
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 5rem;
+  }
+
+  .image-part img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .players-section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: auto auto auto;
+  }
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    color: grey;
+  }
+}
